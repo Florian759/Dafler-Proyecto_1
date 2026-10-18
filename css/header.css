@@ -1,8 +1,10 @@
 header{
+    position: fixed;
+
     width: 100%;
     height: 7vh;
 
-    background-color: var(--header-background-color);
+    background-color: var(--element-background-color);
 
     display: flex;
     align-items: center;

@@ -1,7 +1,8 @@
 :root {
   --background-color: #ffffff;
   --text-color: #222;
-  --header-background-color: rgb(18, 7, 137); 
+  --subtext-color: rgb(214, 213, 213);
+  --element-background-color: rgb(41, 31, 158); 
 }
 
 * {
