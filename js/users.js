@@ -1,8 +1,9 @@
-import { users } from "./data.js";
+import { users, lang } from "./data.js";
 
 const form = document.getElementById("formAddUser");
 const table = document.getElementById("usersTable");
 const count = document.getElementById("count");
+const langSelect = document.getElementById("nativeLang");
 
 function drawTable() {
     const rows = users.map((item) => {
@@ -35,7 +36,7 @@ function addUser(evento) {
         name: document.getElementById("name").value.trim(),
         email: document.getElementById("email").value.trim(),
         password: document.getElementById("password").value,
-        nativeLang: "Español",
+        nativeLang: langSelect.value,
         city: document.getElementById("city").value.trim()
     });
 
@@ -50,7 +51,14 @@ function deleteUser(id) {
     drawTable();
 }
 
+function fillLangs() {
+    lang.forEach((item) => {
+        langSelect.add(new Option(item, item));
+    });
+}
+
 function start() {
+    fillLangs();
     drawTable();
 }
 
