@@ -1,9 +1,9 @@
 import { users, lang } from "./data.js";
 
-const form = document.getElementById("formAddUser");
-const table = document.getElementById("usersTable");
+const form = document.getElementById("form-add-user");
+const table = document.getElementById("users-table");
 const count = document.getElementById("count");
-const langSelect = document.getElementById("nativeLang");
+const langSelect = document.getElementById("native-lang");
 
 function drawTable() {
     const rows = users.map((item) => {
