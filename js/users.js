@@ -12,7 +12,10 @@ function drawTable() {
             <td>${item.email}</td>
             <td>${item.nativeLang}</td>
             <td>${item.city}</td>
+            <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
         `;
+
+        row.querySelector("button").addEventListener("click", () => deleteUser(item.id));
 
         return row;
     });
@@ -37,6 +40,13 @@ function addUser(evento) {
     });
 
     form.reset();
+    drawTable();
+}
+
+function deleteUser(id) {
+    const index = users.findIndex((user) => user.id === id);
+
+    users.splice(index, 1);
     drawTable();
 }
 
