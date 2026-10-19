@@ -3,9 +3,10 @@ export const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Nativo"];
 export const type = ["Presencial", "En línia"];
 
 export const users = [
-    {id: 1, name: "Florian", email: "florian@dafler.com", password: "1234", nativeLang: "Español", city: "Barcelona"},
-    {id: 2, name: "Daniel", email: "daniel@dafler.com", password: "1234", nativeLang: "Español", city: "Girona"},
-    {id: 3, name: "Erik", email: "erik@dafler.com", password: "1234", nativeLang: "Catalán", city: "Tarragona"}
+    {id: 1, name: "Dafler", email: "dafler@dafler.com", password: "1234", nativeLang: "Catalán", city: "Barcelona"},
+    {id: 2, name: "Florian", email: "florian@dafler.com", password: "1234", nativeLang: "Español", city: "Barcelona"},
+    {id: 3, name: "Daniel", email: "daniel@dafler.com", password: "1234", nativeLang: "Español", city: "Girona"},
+    {id: 4, name: "Erik", email: "erik@dafler.com", password: "1234", nativeLang: "Catalán", city: "Tarragona"}
 ];
 
 // Tipo "offer" -> Oferta (Tu das el servicio) | Tipo "petition" -> Petición (Necesitas aprender)
