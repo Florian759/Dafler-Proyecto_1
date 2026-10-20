@@ -1,5 +1,6 @@
 import { exchanges, lang, levels, type, users } from "./data.js";
 
+const form = document.getElementById("form-add-exchange");
 const table = document.getElementById("exchange-table");
 const count = document.getElementById("count");
 const languageHTML = document.getElementById("language");
@@ -15,8 +16,9 @@ function drawTable() {
             <td>${item.title}</td>
             <td>${item.lang}</td>
             <td>${item.level}</td>
-            <td>${item.modality}</td>
+            <td>${item.type}</td>
             <td>${item.user}</td>
+            <td>${item.description}</td>
             <td>${item.date}</td>
             <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
         `;
@@ -29,6 +31,28 @@ function drawTable() {
     table.replaceChildren(...rows);
 
     count.textContent = exchanges.length;
+}
+
+function addExchange(evento) {
+    evento.preventDefault();
+
+    const id = exchanges.length ? exchanges[exchanges.length - 1].id + 1 : 1;
+
+    exchanges.push({
+        id: id,
+        service: document.getElementById("service").value.trim(),
+        lang: languageHTML.value,
+        level: levelHTML.value,
+        type: modalityHTML.value,
+        user: userHTML.value,
+        title: document.getElementById("title").value.trim(),
+        description: document.getElementById("description").value.trim(),
+        date: document.getElementById("date").value.trim(),
+
+    });
+console.log(exchanges);
+    form.reset();
+    drawTable();
 }
 
 function deleteExchange(id) {
@@ -57,7 +81,7 @@ function fillModalities() {
 
 function fillUsers() {
     users.forEach((item) => {
-        userHTML.add(new Option(item.name, item.id));
+        userHTML.add(new Option(item.name, item.name));
     });
 }
 
@@ -71,5 +95,5 @@ function start() {
 }
 
 
-
+form.addEventListener("submit", addExchange);
 document.addEventListener("DOMContentLoaded", start);
