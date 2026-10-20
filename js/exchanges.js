@@ -1,7 +1,11 @@
-import { exchanges } from "./data.js";
+import { exchanges, lang, levels, type, users } from "./data.js";
 
 const table = document.getElementById("exchange-table");
 const count = document.getElementById("count");
+const languageHTML = document.getElementById("language");
+const levelHTML = document.getElementById("level");
+const modalityHTML = document.getElementById("modality");
+const userHTML = document.getElementById("user");
 
 function drawTable() {
     const rows = exchanges.map((item) => {
@@ -33,8 +37,39 @@ function deleteExchange(id) {
     drawTable();
 }
 
+function fillLangs() {
+    lang.forEach((item) => {
+        languageHTML.add(new Option(item, item));
+    });
+}
+
+function fillLevels() {
+    levels.forEach((item) => {
+        levelHTML.add(new Option(item, item));
+    });
+}
+
+function fillModalities() {
+    type.forEach((item) => {
+        modalityHTML.add(new Option(item, item));
+    });
+}
+
+function fillUsers() {
+    users.forEach((item) => {
+        userHTML.add(new Option(item.name, item.id));
+    });
+}
+
 function start() {
+    fillLangs();
+    fillLevels();
+    fillModalities();
+    fillUsers();
+
     drawTable();
 }
+
+
 
 document.addEventListener("DOMContentLoaded", start);
