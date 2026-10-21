@@ -11,8 +11,8 @@ export const users = [
 
 // Tipo "offer" -> Oferta (Tu das el servicio) | Tipo "petition" -> Petición (Necesitas aprender)
 export const exchanges = [
-    {id: 1, service: "offer", lang: "Catalán", level: "Nativo", type: "Presencial", user: "Daniel", title: "Ofrezco catalán solo por la mañana", description: "Quedariamos en la biblioteca cerca de la universidad de Girona para hacer clases de 1h.", date: "18-10-26"},
-    {id: 2, service: "offer", lang: "Español", level: "Nativo", type: "En línia", user: "Florian", title: "Ofrezco español 1h de 10h a 14h", description: "Las clases durarían una hora y seerían a través de google meet.", date: "19-10-26"},
-    {id: 3, service: "offer", lang: "Inglés", level: "B2", type: "Presencial", user: "Erik", title: "Ofrezco inglés de lunes a viernes todas las tardes.", description: "Quedariamos en la biblioteca cerca de la universidad de Tarragona para hacer clases de 1h.", date: "18-10-26"},
-    {id: 4, service: "petition", lang: "Italiano", level: "B1", type: "En línia", user: "Erik", title: "Tengo un examen de italiano", description: "Necesito aprender italiano en un B2 para poder presentarme al examen, puedo todas las tardes de 16h a 20h.", date: "18-10-26"}
+    {id: 1, service: "Oferta", lang: "Catalán", level: "Nativo", type: "Presencial", user: "Daniel", title: "Ofrezco catalán solo por la mañana", description: "Quedariamos en la biblioteca cerca de la universidad de Girona para hacer clases de 1h.", date: "18-10-26"},
+    {id: 2, service: "Oferta", lang: "Español", level: "Nativo", type: "En línia", user: "Florian", title: "Ofrezco español 1h de 10h a 14h", description: "Las clases durarían una hora y seerían a través de google meet.", date: "19-10-26"},
+    {id: 3, service: "Oferta", lang: "Inglés", level: "B2", type: "Presencial", user: "Erik", title: "Ofrezco inglés de lunes a viernes todas las tardes.", description: "Quedariamos en la biblioteca cerca de la universidad de Tarragona para hacer clases de 1h.", date: "18-10-26"},
+    {id: 4, service: "Petición", lang: "Italiano", level: "B1", type: "En línia", user: "Erik", title: "Tengo un examen de italiano", description: "Necesito aprender italiano en un B2 para poder presentarme al examen, puedo todas las tardes de 16h a 20h.", date: "18-10-26"}
 ];
