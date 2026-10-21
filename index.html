@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dafler Dashboard</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <title>Dafler - Dashboard</title>
+
+    <!-- Estilos de css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Estilos externos -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    
+    <header>
+        <div class="logo-box"> 
+            <a href="index.html">
+                <span id="logo-img" class="material-symbols-rounded">translate</span>
+                <div id="logo-text">Tándem Dafler App</div>
+            </a>
+        </div>
+
+        <div class="nav-box">
+            <ul><li><a href="index.html">Dashboard</a></li></ul>
+            <ul><li><a href="exchanges.html">Intercambios</a></li></ul>
+            <ul><li><a href="users.html">Usuarios</a></li></ul>
+        </div>
+
+        <div class="login-btn-box">
+            <a href="login.html"><button>
+                <span id="logo-img" class="material-symbols-rounded">login</span>
+                <p>Login</p>
+            </button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="main-content-header">
+                <h1>Tablón de intercambios de idiomas</h1>
+                <h2>Encuentra con quién practicar el idioma que estas aprendiendo u ofrece el tuyo.</h2>
+            </div>
+            <div class="main-content-index">
+                <div class="main-content-index-text">
+                    <div class="dot offer"></div>
+                    <p>Oferta</p>
+                </div>
+                <div class="main-content-index-text">
+                    <div class="dot petition"></div>
+                    <p>Petición</p>
+                </div>
+            </div>
+            <div class="main-content-slider">
+                <div class="slider-header">
+                    <h3>Ofertas</h3>
+                </div>
+                <div class="slider-cards-content">
+                    <div class="card offer">
+                        <div class="card-header">
+                            <h3>Titulo de ejemplo</h3>
+                            <h4>18-10-2026</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ipsam? Autem, omnis cum non sint, ullam ad distinctio ut voluptates mollitia officiis voluptatum maiores reprehenderit.</p>
+                        </div>
+                        <div class="card-author">
+                            <p>Publicado por: Erik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-slider">
+                <div class="slider-header">
+                    <h3>Peticiones</h3>
+                </div>
+                <div class="slider-cards-content">
+                    <div class="card petition">
+                        <div class="card-header">
+                            <h3>Titulo de ejemplo super largo que no puede caber</h3>
+                            <h4>18-10-2026</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat inventore harum illum deleniti quia similique laboriosam hic sed doloremque a reiciendis neque eius adipisci enim soluta vitae debitis molestias itaque, omnis magnam quibusdam? Quibusdam doloribus, accusantium quasi officiis quidem delectus, culpa harum dolor ex voluptatibus aliquid est magnam beatae architecto voluptate eos incidunt? Quaerat iusto eaque autem sunt inventore architecto, amet iure explicabo perferendis saepe fugit dolorum minus, omnis quasi praesentium dolorem, odio asperiores vitae placeat minima officiis molestiae animi numquam? Repellat quibusdam dicta voluptas eius quaerat sint nemo, obcaecati sit quidem assumenda ducimus nulla quasi, hic doloribus perspiciatis? Voluptates itaque quibusdam nisi animi modi iste! Repellendus quo, aperiam mollitia harum iusto cum ipsa fugit voluptatum at totam sapiente ullam commodi eveniet veniam recusandae sunt repudiandae consequuntur consequatur aliquid quod aut maxime maiores exercitationem voluptas! Earum laborum, accusamus incidunt eos soluta delectus praesentium a in laboriosam repellat temporibus iure nam animi repudiandae voluptatem consequuntur modi iusto dignissimos tempore vero! Iure provident ullam, numquam dignissimos possimus reprehenderit assumenda quasi? Deleniti illo laboriosam porro amet sint exercitationem. Labore officia ex, necessitatibus a optio voluptas consequatur tenetur quae, suscipit vero officiis provident reiciendis, nostrum aspernatur! Ipsa consequatur dicta repellendus minus soluta officia excepturi.</p>
+                        </div>
+                        <div class="card-author">
+                            <p>Publicado por: Erik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tándem Dafler App · Producto 1 - FP.450 Desarrollo FullStack</p>
+    </footer>
+
 </body>
 <script type="module" src="js/dashboard.js"></script>
 </html>
